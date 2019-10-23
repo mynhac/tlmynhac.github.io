@@ -1,0 +1,479 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Slider */
+.cd-hero {
+  position: relative;
+}
+
+.cd-hero__slider {
+  position: relative;
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cd-hero__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0px);
+          transform: translateZ(0px);
+  will-change: transform;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-hero__slide.cd-hero__slide--selected {
+  /* this is the visible slide */
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.cd-hero__slide.cd-hero__slide--move-left {
+  /* slide hidden on the left */
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.cd-hero__slide.cd-hero__slide--is-moving,
+.cd-hero__slide.cd-hero__slide--selected {
+  /* the cd-hero__slide--is-moving class is assigned to the slide which is moving outside the viewport */
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-hero__slider {
+    height: 450px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-hero__slider {
+    height: 600px;
+  }
+}
+
+/* Slide style */
+.cd-hero__slide {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cd-hero__slide:first-of-type {
+  background-color: #505D58;
+	background-image: url("../image/index/banner1.jpg");
+}
+
+.cd-hero__slide:nth-of-type(2) {
+  background-color: #505D58;
+  background-image: url("../image/index/banner2.jpg");
+}
+
+.cd-hero__slide:nth-of-type(3) {
+  background-color: #505D58;
+  background-image: url("../image/index/banner3.jpg");
+}
+
+.cd-hero__slide:nth-of-type(4) {
+  background-color: #505D58;
+  background-image: url("../image/index/banner4.jpg");
+}
+
+/*.cd-hero__slide:nth-of-type(5) {
+  background-color: #505D58;
+  background-image: url(../assets/img.jpg);
+}*/
+
+.cd-hero__content.cd-hero__content--full-width,
+.cd-hero__content.cd-hero__content--half-width {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  /* this padding is used to align the text */
+  padding-top: 100px;
+  text-align: center;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.cd-hero__content h2, .cd-hero__content p, .cd-hero__btn, .cd-hero__content--img img {
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.cd-hero__content.cd-hero__content--img {
+  /* hide image on mobile device */
+  display: none;
+}
+
+.cd-hero__content--img img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: auto;
+  right: auto;
+  
+}
+
+.cd-hero__content h2, .cd-hero__content p {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  line-height: 1.2;
+  margin: 0px auto 14px;
+  color: #ffffff;
+  width: 90%;
+  max-width: 400px;
+}
+
+.cd-hero__content h2 {
+  font-size: 22px;
+}
+
+.cd-hero__content p {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.cd-hero__btn {
+  display: inline-block;
+  padding: 12px 15px;
+  margin-top: .8em;
+  background-color:  rgba(240,226,192,0.9);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #505D58;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.cd-hero__btn.cd-hero__btn--secondary {
+  background-color: rgba(80,93,88,0.9);
+  color: #F0E2C0;
+}
+
+.cd-hero__btn:nth-of-type(2) {
+  margin-left: 1em;
+}
+
+.cd-hero__btn:hover {
+  background-color: #505D58;
+  color: #F0E2C0;
+}
+
+.cd-hero__btn.cd-hero__btn--secondary:hover {
+  background-color:#F0E2C0;
+  color: #505D58;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-hero__slide:nth-of-type(2),
+  .cd-hero__slide:nth-of-type(3),
+  .cd-hero__slide:nth-of-type(4) {
+    background-image: none;
+  }
+  .cd-hero__content.cd-hero__content--full-width,
+  .cd-hero__content.cd-hero__content--half-width {
+    padding-top: 150px;
+  }
+  .cd-hero__content.cd-hero__content--bg-video {
+    display: block;
+  }
+  .cd-hero__content.cd-hero__content--half-width {
+    width: 100%;
+  }
+  .cd-hero__content.cd-hero__content--half-width:first-of-type {
+    left: 5%;
+  }
+  .cd-hero__content.cd-hero__content--half-width:nth-of-type(2) {
+    right: 5%;
+    left: auto;
+  }
+  .cd-hero__content.cd-hero__content--img {
+    display: block;
+  }
+  .cd-hero__content h2, .cd-hero__content p {
+    max-width: 520px;
+	 
+  }
+  .cd-hero__content h2 {
+    font-size: 28px;
+    font-weight: 300;
+  }
+	 .cd-hero__content p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .cd-hero__btn {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .cd-hero__content.cd-hero__content--full-width,
+  .cd-hero__content.cd-hero__content--half-width {
+    padding-top: 220px;
+  }
+  .cd-hero__content h2, .cd-hero__content p {
+    margin-bottom: 20px;
+  }
+  .cd-hero__content h2 {
+    font-size: 48px;
+	margin-top: -25px;
+	   font-weight: 700
+  }
+  .cd-hero__content p {
+    font-size: 1.6rem;
+	margin-top: 20px;
+  }
+  .cd-hero__btn {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+	.cd-hero__content h2 {
+    font-size: 28px;
+    font-weight: 300;
+	margin-top: 0px
+  }
+	.cd-hero__content p {
+    font-size: 16px;
+  }
+	.cd-hero__btn {
+    font-size: 12px;
+    padding: 7px 12px
+  }
+}
+
+
+/* Single slide animation */
+@media only screen and (min-width: 768px) {
+  .cd-hero__content.cd-hero__content--half-width {
+    opacity: 0;
+    -webkit-transform: translateX(40px);
+        -ms-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+  .cd-hero__slide--move-left .cd-hero__content.cd-hero__content--half-width {
+    -webkit-transform: translateX(-40px);
+        -ms-transform: translateX(-40px);
+            transform: translateX(-40px);
+  }
+  .cd-hero__slide--selected .cd-hero__content.cd-hero__content--half-width {
+    /* this is the visible slide */
+    opacity: 1;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .cd-hero__slide--is-moving .cd-hero__content.cd-hero__content--half-width {
+    /* this is the slide moving outside the viewport 
+    wait for the end of the transition on the <li> parent before set opacity to 0 and translate to 40px/-40px */
+    -webkit-transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, -webkit-transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s;
+    transition: opacity 0s 0.5s, transform 0s 0.5s, -webkit-transform 0s 0.5s;
+  }
+  .cd-hero__slide--from-left.cd-hero__slide--selected .cd-hero__content.cd-hero__content--half-width:nth-of-type(2),
+  .cd-hero__slide--from-right.cd-hero__slide--selected .cd-hero__content.cd-hero__content--half-width:first-of-type {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, -webkit-transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s;
+    transition: opacity 0.4s 0.2s, transform 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
+  }
+  .cd-hero__slide--from-left.cd-hero__slide--selected .cd-hero__content.cd-hero__content--half-width:first-of-type,
+  .cd-hero__slide--from-right.cd-hero__slide--selected .cd-hero__content.cd-hero__content--half-width:nth-of-type(2) {
+    /* this is the selected slide - different animation if it's entering from left or right */
+    -webkit-transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, -webkit-transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s;
+    transition: opacity 0.4s 0.4s, transform 0.5s 0.4s, -webkit-transform 0.5s 0.4s;
+  }
+  .cd-hero__content--full-width h2,
+  .cd-hero__content--full-width p,
+  .cd-hero__content--full-width .cd-hero__btn {
+    -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  .cd-hero__slide--move-left .cd-hero__content--full-width h2,
+  .cd-hero__slide--move-left .cd-hero__content--full-width p,
+  .cd-hero__slide--move-left .cd-hero__content--full-width .cd-hero__btn {
+    -webkit-transform: translateX(-100px);
+        -ms-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  .cd-hero__slide--selected .cd-hero__content--full-width h2,
+  .cd-hero__slide--selected .cd-hero__content--full-width p,
+  .cd-hero__slide--selected .cd-hero__content--full-width .cd-hero__btn {
+    /* this is the visible slide */
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .cd-hero__slide--is-moving .cd-hero__content--full-width h2,
+  .cd-hero__slide--is-moving .cd-hero__content--full-width p,
+  .cd-hero__slide--is-moving .cd-hero__content--full-width .cd-hero__btn {
+    /* this is the slide moving outside the viewport 
+    wait for the end of the transition on the li parent before set translate to 100px/-100px */
+    -webkit-transition: -webkit-transform 0s 0.5s;
+    transition: -webkit-transform 0s 0.5s;
+    transition: transform 0s 0.5s;
+    transition: transform 0s 0.5s, -webkit-transform 0s 0.5s;
+  }
+  .cd-hero__slide--selected h2 {
+    -webkit-transition: -webkit-transform 0.5s 0.2s;
+    transition: -webkit-transform 0.5s 0.2s;
+    transition: transform 0.5s 0.2s;
+    transition: transform 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
+  }
+  .cd-hero__slide--selected p {
+    -webkit-transition: -webkit-transform 0.5s 0.3s;
+    transition: -webkit-transform 0.5s 0.3s;
+    transition: transform 0.5s 0.3s;
+    transition: transform 0.5s 0.3s, -webkit-transform 0.5s 0.3s;
+  }
+  .cd-hero__slide--selected .cd-hero__btn {
+    -webkit-transition: background-color 0.2s 0s, -webkit-transform 0.5s 0.4s;
+    transition: background-color 0.2s 0s, -webkit-transform 0.5s 0.4s;
+    transition: transform 0.5s 0.4s, background-color 0.2s 0s;
+    transition: transform 0.5s 0.4s, background-color 0.2s 0s, -webkit-transform 0.5s 0.4s;
+  }
+}
+
+/* Slider navigation */
+.cd-hero__nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  height: 55px;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.cd-hero__nav nav, .cd-hero__nav ul, .cd-hero__nav li, .cd-hero__nav a {
+  height: 100%;
+  }
+
+.cd-hero__nav nav {
+  display: inline-block;
+  position: relative;
+}
+
+.cd-hero__marker {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  color: #FFFFFF;
+ 
+  
+}
+
+.cd-hero__marker.cd-hero__marker--item-2 {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.cd-hero__marker.cd-hero__marker--item-3 {
+  -webkit-transform: translateX(200%);
+      -ms-transform: translateX(200%);
+          transform: translateX(200%);
+}
+
+.cd-hero__marker.cd-hero__marker--item-4 {
+  -webkit-transform: translateX(300%);
+      -ms-transform: translateX(300%);
+          transform: translateX(300%);
+}
+
+.cd-hero__marker.cd-hero__marker--item-5 {
+  -webkit-transform: translateX(400%);
+      -ms-transform: translateX(400%);
+          transform: translateX(400%);
+}
+
+
+.cd-hero__nav li {
+  display: inline-block;
+  width: 60px;
+  float: left;
+}
+
+.cd-hero__nav .cd-selected a {
+  color: #F0E2C0;
+  background-color: rgba(0, 1, 1, 0.5);
+}
+
+.cd-hero__nav .cd-selected a:hover {
+  background-color: transparent;
+}
+
+.cd-hero__nav a {
+  display: block;
+  position: relative;
+  padding-top: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #505D58;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+
+.cd-hero__nav a:hover {
+  background-color: rgba(240,226,192,0.7);
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .cd-hero__nav {
+    height: 60px;
+  }
+  .cd-hero__marker,
+  .cd-hero__nav li {
+    width: 95px;
+  }
+  .cd-hero__nav a {
+    
+    font-size: 1.1rem;
+    text-transform: uppercase;
+  }
+ 
+}
+

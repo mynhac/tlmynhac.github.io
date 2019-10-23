@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#blog1 h2 {color: #F0E2C0;}
+#blog1 h4 {color: #F0E2C0;}
+#blog1 .blog-left-text {color: #F0E2C0; font-size: 24px}
+#blog1 .blog-left-text:hover {font-style: italic; text-decoration: none}
+#blog1 p{color: #F0E2C0; font-size:14px; text-align: justify}
+
+#blog1 .xemthem { font-size:12px; color: #F0E2C0;}
+#blog1 .xemthem:hover { color: #F0E2C0; padding: 2px 5px; border-radius: 3px; text-decoration: none; border: 1px solid #F0E2C0}
+#blog1 .blog-search {background: #505D58; color: #F0E2C0; border-radius: 5px; border: 1px solid #F0E2C0; padding: 5px 0px}
+#blog1 .blog-search:focus {color: #505D58; border-color: #F0E2C0; outline: 0;box-shadow: 0 0 0 0.2rem rgba(240,226,192,0.25)}
+#blog1 .blog-right {border: 1px solid #F0E2C0 ; height: 920px}
+#blog1 .blog-right p { font-size: 10px; margin-top: 5px; text-align: left}
+#blog1 .blog-right a {font-size: 16px; text-decoration: none; color: #F0E2C0}
+.blog-ipad {display: none}
+
+@media only screen and (max-width: 1024px){
+	#blog1 .blog-right {border: 1px solid #F0E2C0; border-radius: 10px; height: 970px; margin-bottom: 100px}	
+	.timtheotags h4{margin-top: 50px}
+}
+
+@media only screen and (max-width: 768px){
+	#blog1 .blog-right {border: 1px solid #F0E2C0; border-radius: 10px; height: 1250px; margin-bottom: 100px}	
+	.blog-ipad {display: block}
+	.blog-desktop {display: none}
+	
+}
+
+@media only screen and (max-width: 480px){
+	#blog1 .blog-right {border: none; height: auto; margin-bottom: 100px}
+	.chuthich {margin-top: 20px}
+	.timtheotags {margin-top: 10px}
+	.blog-small-text {margin-top: 10px}
+}
+
+hr.new1 {border-top: 1px solid rgba(240,226,192,0.5);}
+.blog-right-text:hover {font-style: italic}
+
+#blog1 .tags p {background: #F0E2C0; color: #505D58; padding: 5px; margin-left: 10px; border-radius: 4px}
+#blog1 .tags a {color: #505D58; font-size: 14px;}
+#blog1 .tags p:hover {background: #505D58; border: 1px solid #F0E2C0}
+#blog1 .tags a:hover {color:#F0E2C0 }
+
+
+#blog1 .image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden; 
+	border: 1px solid #F0E2C0;
+	padding-top: 12px; 
+	padding-bottom: 12px;
+	border-radius: 5px
+}
+#blog1 .image-box img {
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+}
+
+#blog1 .image-box:hover img {
+	 -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+

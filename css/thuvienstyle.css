@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* BatdauCSS-thuvienAnh*/
+#thuvienanh .row {display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;}
+#thuvienanh .column {-ms-flex: 25%; flex: 25%; max-width: 25%; padding: 0 4px;}
+#thuvienanh .column img {margin-top: 8px; vertical-align: middle; width: 100%;}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+#thuvienanh .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#thuvienanh .image-box img {max-width: 100%; transition: all 0.3s; display: block; width: 100%; height: auto; transform: scale(1);}
+#thuvienanh .image-box:hover img {transform: scale(1.1)}
+
+
+
+
+/* BatdauCSS-thuvienAmThanh*/
+#thuvienAT .hover-box1 {position: relative; width: 80%; }
+
+#thuvienAT .image1 {display: block; width: 100%; height: auto;}
+
+#thuvienAT .overlay1 {position: absolute; bottom: 100%; left: 0; right: 0; background-color: #505D58; overflow: hidden; width: 100%; height:0; transition: .5s ease;}
+
+#thuvienAT .hover-box1:hover .overlay1 {bottom: 0; height: 100%;  border: 1px solid #F0E2C0; border-radius: 5px}
+
+#thuvienAT .text1 {color: #F0E2C0; font-size: 12px; position: absolute; top: 50%; left: 40%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: justify;}
+
+#thuvienAT .image2 {display: block; width: 100%; height: auto; margin-top: -325px; margin-left: 18px; width: 85%}
+#thuvienAT .overlay2 {position: absolute; bottom: 100%; right: 0; background-color: rgba(80,93,88,0.8); overflow: hidden; width: 86%; height:0; transition: .5s ease; left: 25px; border: none;}
+#thuvienAT .hover-box1:hover .overlay2 {bottom: 0; height: 100%; border-radius: 5px; border: 1px solid #505D58}
+
+#thuvienAT .at-box4, .at-box5, .at-box6 {margin-top: 30px}
+
+audio {color:  #F0E2C0; width: 75%;height: 35px; }
+
+#thuvienAT .audio-box {position: absolute; margin-top: -105px; margin-left: -15px}
+
+@media screen and (max-width: 768px) {
+	#thuvienAT .at-box3, .at-box4, .at-box5, .at-box6 {margin-top: 30px}
+	#thuvienAT .image2 {display: block; width: 100%; height: auto; margin-top: -305px; margin-left: 11px; width: 85%}
+	#thuvienAT .overlay2 {position: absolute; bottom: 100%; right: 0; background-color: rgba(80,93,88,0.8); overflow: hidden; width: 86%; height:0; transition: .5s ease; left: 22px; border: none;}
+	#thuvienAT .audio-box {position: absolute; margin-top: -95px; margin-left: -15px}
+	audio {
+    color:  #F0E2C0; 
+    width: 80%;
+    height: 35px; 
+}
+	
+}
+
+@media screen and (max-width: 480px) {
+	#thuvienAT .at-box1, .at-box2, .at-box3, .at-box4, .at-box5, .at-box6 {margin-top: 30px}
+	#thuvienAT .image2 {display: block; width: 100%; height: auto; margin-top: -320px; margin-left: 16px; width: 85%}
+	#thuvienAT .overlay2 {position: absolute; bottom: 100%; right: 0; background-color: rgba(80,93,88,0.8); overflow: hidden; width: 86%; height:0; transition: .5s ease; left: 24px; border: none;}
+	#thuvienAT .audio-box {position: absolute; margin-top: -100px; margin-left: -15px}
+	audio {
+    color:  #F0E2C0; 
+    width: 80%;
+    height: 35px; 
+}
+
+
+
+
+/* BatdauCSS-Album*/
+
+#album .container-album{
+	width: 100%;
+	position: relative;
+}
+.clr{
+	clear: both;
+	padding: 0;
+	height: 0;
+	margin: 0;
+}
+
+#album .container-album > header h1 span{
+	font-weight: 700;
+}
+	

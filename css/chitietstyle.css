@@ -1,0 +1,296 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.chitiet-bg { margin-bottom: 100px; border: 3px solid #F0E2C0;-webkit-box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);
+-moz-box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);
+box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);
+}
+
+.pattern-box {padding: 0px 30px; margin-top: 150px}
+
+#trungbay .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#trungbay .image-box img {transition: all 0.3s; display: block; height: auto; transform: scale(1);}
+#trungbay .image-box:hover img {transform: scale(1.1)}
+
+#trungbay h3 {color: #F0E2C0; text-align:left; margin-top: 10px}
+#trungbay p {color: #F0E2C0; text-align:justify; margin-top: 10px; font-size: 14px;}
+#trungbay a{background: #505D58 ; color:#F0E2C0; padding: 5px; border-radius: 3px; border: 1px solid #F0E2C0; text-decoration: none}
+#trungbay a:hover {background: #F0E2C0 ; color:#505D58; padding: 5px; border-radius: 3px;text-decoration: none}
+#trungbay .trungbay-text{margin-top: 110px; padding: 0px 30px}
+
+#chieuphim .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#chieuphim .image-box img {transition: all 0.3s; display: block; height: auto; transform: scale(1);}
+#chieuphim .image-box:hover img {transform: scale(1.1)}
+
+#chieuphim h3 {color: #F0E2C0; text-align:left; margin-top: 10px}
+#chieuphim p {color: #F0E2C0; text-align:justify; margin-top: 10px; font-size: 14px;}
+#chieuphim a{background: #505D58 ; color:#F0E2C0; padding: 5px; border-radius: 3px; border: 1px solid #F0E2C0; text-decoration: none}
+#chieuphim a:hover {background: #F0E2C0 ; color:#505D58; padding: 5px; border-radius: 3px;text-decoration: none}
+#chieuphim .chieuphim-text{margin-top: 140px; padding: 0px 30px}
+
+#toadam .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#toadam .image-box img {transition: all 0.3s; display: block; height: auto; transform: scale(1);}
+#toadam .image-box:hover img {transform: scale(1.1)}
+
+#toadam h3 {color: #F0E2C0; text-align:left; margin-top: 10px}
+#toadam p {color: #F0E2C0; text-align:justify; margin-top: 10px; font-size: 14px;}
+#toadam a{background: #505D58 ; color:#F0E2C0; padding: 5px; border-radius: 3px; border: 1px solid #F0E2C0; text-decoration: none}
+#toadam a:hover {background: #F0E2C0 ; color:#505D58; padding: 5px; border-radius: 3px;text-decoration: none}
+#toadam .toadam-text{margin-top: 140px; padding: 0px 30px}
+
+#workshop .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#workshop .image-box img {transition: all 0.3s; display: block; height: auto; transform: scale(1);}
+#workshop .image-box:hover img {transform: scale(1.1)}
+
+#workshop h3 {color: #F0E2C0; text-align:left; margin-top: 10px}
+#workshop p {color: #F0E2C0; text-align:justify; margin-top: 10px; font-size: 14px;}
+#workshop a{background: #505D58 ; color:#F0E2C0; padding: 5px; border-radius: 3px; border: 1px solid #F0E2C0; text-decoration: none}
+#workshop a:hover {background: #F0E2C0 ; color:#505D58; padding: 5px; border-radius: 3px;text-decoration: none}
+#workshop .workshop-text{margin-top: 120px; padding: 0px 30px}
+
+#trinhdien .image-box {position: relative; margin: auto; overflow: hidden; border-radius: 8px;}
+#trinhdien .image-box img {transition: all 0.3s; display: block; height: auto; transform: scale(1);}
+#trinhdien .image-box:hover img {transform: scale(1.1)}
+
+#trinhdien h3 {color: #F0E2C0; text-align:left; margin-top: 10px}
+#trinhdien p {color: #F0E2C0; text-align:justify; margin-top: 10px; font-size: 14px;}
+#trinhdien a{background: #505D58 ; color:#F0E2C0; padding: 5px; border-radius: 3px; border: 1px solid #F0E2C0; text-decoration: none}
+#trinhdien a:hover {background: #F0E2C0 ; color:#505D58; padding: 5px; border-radius: 3px;text-decoration: none}
+#trinhdien .trinhdien-text{margin-top: 130px; padding: 0px 30px}
+
+
+@media only screen and (max-width: 768px){
+	.vertical-slider {margin-top: 60px}
+	.pattern {display: none}
+	.pattern-box {padding: 0px 30px; margin-top: 80px}
+	#trungbay .trungbay-text{margin-top: 20px; padding: 0px 30px}
+	#chieuphim .chieuphim-text{margin-top: 20px; padding: 0px 30px}
+	#toadam .toadam-text{margin-top: 20px; padding: 0px 30px}
+	#workshop .workshop-text{margin-top: 20px; padding: 0px 30px}
+	#trinhdien .trinhdien-text{margin-top: 20px; padding: 0px 30px}
+	.chitiet-bg { margin-bottom: 100px; border: 3px solid #F0E2C0; background-image: none; -webkit-box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);
+-moz-box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);
+box-shadow: 0px 0px 52px 4px rgba(10,10,10,0.55);}
+}
+
+@media only screen and (max-width: 480px){
+	.chitiet-bg { margin-bottom: 100px; border: none; background-image: none; -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.45);
+-moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.45); box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.45);}
+}
+
+
+
+@-webkit-keyframes shrink {
+  0% {
+    color: green;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: grey;
+  }
+}
+@keyframes shrink {
+  0% {
+    color: green;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: grey;
+  }
+}
+@-webkit-keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: grey;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: green;
+  }
+}
+@keyframes grow {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    color: grey;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    color: green;
+  }
+}
+/* $. Classes
+\*----------------------------------------------------------------*/
+.animate {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.animate--shrink, .hero__title .slick-current > span {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: shrink;
+          animation-name: shrink;
+  -webkit-animation-timing-function: 'linear';
+          animation-timing-function: 'linear';
+}
+
+.animate--grow, .hero__title .slick-current + .slick-slide > span, .no-js .hero__title .slick-dupe:nth-child(2) > span {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: 'linear';
+          animation-timing-function: 'linear';
+  -webkit-animation-name: grow;
+          animation-name: grow;
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  touch-action: pan-y;
+  tap-highlight-color: transparent;
+  padding-top: 40px;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 0;
+  outline: none;
+}
+.slick-vertical .slick-slide:focus, .slick-vertical .slick-slide:active, .slick-vertical .slick-slide::-moz-selection {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none;
+}
+.slick-vertical .slick-slide:focus, .slick-vertical .slick-slide:active, .slick-vertical .slick-slide::selection {
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.slick-current {
+  position: relative;
+}
+
+.hero__title .slick-slide {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.hero__title [aria-hidden] {
+  transition: 1s;
+}
+
+.hero__title .slick-current > span {
+  box-sizing: border-box;
+  display: block;
+}
+
+.no-js .hero__title .slick-dupe:nth-child(2) > span {
+  padding: 1em;
+}
+
+.hero__title-misc {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: grey;
+}
+
+
+
+

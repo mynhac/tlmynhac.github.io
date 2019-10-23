@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mynhac h2 {color: #F0E2C0;}
+#mynhac h4 {color: #F0E2C0;}
+#mynhac p {color: #F0E2C0; font-size:15px; text-align: justify; margin-top: -10px}
+.vemynhac, .taisao {margin-top: 60px}
+
+@media only screen and (min-width: 768px) {
+	#mynhac2 {display: none}	
+}
+
+@media only screen and (max-width: 768px){
+	#mynhac .vemynhac , .taisao {margin-top: -25px}
+
+}
+
+@media only screen and (max-width: 480px){
+	#mynhac {display: none}
+	#mynhac2 h2 {color: #F0E2C0;}
+	#mynhac2 h4 {color: #F0E2C0; text-align: center}
+	#mynhac2 p {color: #F0E2C0; font-size:13px; text-align: center}
+}
+
+
+
+
+/*BatdauCSS-SuMenh*/
+#sumenh h2 {color: #F0E2C0;}
+#sumenh h4 {color: #F0E2C0;}
+#sumenh p {color: #F0E2C0; font-size:15px; text-align: justify}
+.gingiu, .ketnoi, .sangtao, .giaotiep {margin-top: 80px}
+
+
+@media only screen and (min-width: 768px) {
+	#sumenh2 {display: none}	
+}
+
+@media only screen and (max-width: 768px){
+	#sumenh .sangtao, .giaotiep {margin-top: 0px}
+	#sumenh .gingiu, .ketnoi {margin-top: 5px}
+}
+
+@media only screen and (max-width: 480px){
+	#sumenh  {display: none}
+	#sumenh2 h2 {color: #F0E2C0;}
+	#sumenh2 h4 {color: #F0E2C0; text-align: center}
+	#sumenh2 p {color: #F0E2C0; font-size:13px; text-align: center}
+	.headline {margin-bottom: 40px !important}
+}
+
+
+
+
+/*BatdauCSS-TamNhin*/
+#tamnhin .text-tamnhin {text-align: center; color: #F0E2C0; padding: 0px 70px 0px 70px}
+#tamnhin .box-tamnhin {position: relative}
+
+#tamnhin .textbox-tamnhin{ position: absolute; margin-top: -173px; padding: 0 50px 0 50px; left: -4px }
+#tamnhin .tamnhin-desktop {display: block}
+#tamnhin .tamnhin-ipad {display: none}
+#tamnhin .tamnhin-phone {display: none}
+
+@media only screen and (max-width: 768px){
+	#tamnhin .text-tamnhin {text-align: center; color: #F0E2C0; padding: 0px 40px 0px 40px}
+	#tamnhin .textbox-tamnhin{ position: absolute; margin-top: -275px; padding:0 40px 0 40px }
+	#tamnhin .tamnhin-desktop {display: none}
+	#tamnhin .tamnhin-ipad {display:block}
+	#tamnhin .tamnhin-phone {display: none}
+	.tamnhin-bottom {margin-bottom: 20px}
+}
+
+@media only screen and (max-width: 480px){
+	#tamnhin .text-tamnhin {font-size: 13px; margin-top: -20px; text-align: center; color: #F0E2C0; padding: 0px 40px 0px 40px }
+	#tamnhin .textbox-tamnhin{ position: absolute; margin-top: -300px; padding: 0 10px 0 10px; }
+	#tamnhin .tamnhin-desktop {display: none}
+	#tamnhin .tamnhin-ipad {display: none}
+	#tamnhin .tamnhin-phone {display: block}
+}
+
+
+
+
+/*BatdauCSS-Thanhvien*/
+#thanhvien h2 {color: #F0E2C0;}
+#thanhvien h5 {color: #F0E2C0; margin-top: 20px}
+#thanhvien p {color: #F0E2C0; font-size:14px}
+.thanhvien-bottom {margin-bottom: 150px}
+
+@media only screen and (max-width: 768px){
+	.thanhvien-bottom {margin-bottom: 100px}
+}
+
+@media only screen and (max-width: 480px){
+	#thanhvien .col-xs-12 { margin-top: 30px}
+}

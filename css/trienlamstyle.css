@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+#vetrienlam h4 {color: #F0E2C0;}
+#vetrienlam .box-vetrienlam {position: relative}
+#vetrienlam .text-vetrienlam {color: #F0E2C0; text-align: center; padding: 0 70px 0 70px}
+#vetrienlam .textbox-vetrienlam{ position: absolute; margin-top: -160px; padding: 0 50px 0 50px; left: -5px }
+#vetrienlam .trienlam-desktop {display: block}
+#vetrienlam .trienlam-ipad {display: none}
+#vetrienlam .trienlam-phone {display: none}
+
+@media only screen and (max-width: 768px){
+	#vetrienlam .text-vetrienlam {color: #F0E2C0; text-align: center; padding: 0 40px 0 40px;}
+	#vetrienlam .textbox-vetrienlam{ position: absolute; margin-top: -215px; padding:0 40px 0 40px }
+	#vetrienlam .trienlam-desktop {display: none}
+	#vetrienlam .trienlam-ipad {display:block}
+	#vetrienlam .trienlam-phone {display: none}
+}
+
+@media only screen and (max-width: 480px){
+	#vetrienlam .text-vetrienlam {color: #F0E2C0; text-align: center; padding: 0 40px 0 40px; font-size: 13px}
+	#vetrienlam .textbox-vetrienlam{ position: absolute; margin-top: -285px; padding: 0 10px 0 10px; }
+	#vetrienlam .trienlam-desktop {display: none}
+	#vetrienlam .trienlam-ipad {display: none}
+	#vetrienlam .trienlam-phone {display: block}
+}
+
+.flip-box {background-color: transparent; width: 100%; height: 300px; perspective: 1000px;}
+.flip-box-inner {position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.8s;transform-style: preserve-3d;}
+.flip-box:hover .flip-box-inner {transform: rotateY(180deg);}
+.flip-box-front, .flip-box-back {position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 20px}
+.flip-box-front {color: #F0E2C0;}
+.flip-box-back {background-color: #F0E2C0; color: #505D58; transform: rotateY(180deg);}
+
+#cogi .back-inner, .back-inner1, .back-inner2, .back-inner3, .back-inner4 { width: 1000px; padding: 50px 0}
+#cogi a {background-color: #505D58; color:#F0E2C0; padding: 0 10px; border-radius: 5px;}
+#cogi a:hover {border: 1px solid #505D58; background-color: #F0E2C0; color:#505D58; text-decoration: none}
+#cogi .small-cogi {margin: 20px 0}
+@media only screen and (min-width: 768px){
+	.ipad {display: none}
+	.desktop {display: block}
+	.phone {display: none}
+}
+
+@media only screen and (max-width: 768px){
+	.ipad {display: block}
+	.desktop {display: none}
+	#cogi .back-inner, .back-inner1, .back-inner2, .back-inner4 {width: 610px; padding: 45px 0}
+	#cogi .back-inner3 {padding: 30px 0; width: 610px;}
+}
+
+@media only screen and (max-width: 480px){
+	.ipad {display: none}
+	.desktop {display: none}
+	.phone {display: block}
+	#cogi p {font-size: 12px}
+	#cogi h5 {font-size: 14px}
+	#cogi .back-inner, .back-inner1, .back-inner2, .back-inner4 {width: 300px; padding: 20px 0;}
+	#cogi .back-inner3 {width: 300px; padding: 10px 0}
+	#cogi .small-cogi {margin: 0px}
+	.flip-box-back {background-color: #F0E2C0; color: #505D58; transform: rotateY(180deg); height: 250px}
+}
+
+#thoigian .thoigian-box{position: relative; z-index: 1; }
+#thoigian .thoigian-inner{position: absolute; z-index: 10000; margin-top: -240px}
+#thoigian .thoigian-inner h5 {color: #F0E2C0; text-align: center}
+
+@media only screen and (min-width: 768px) {
+	#thoigian1 {display: none}
+	#thoigian {display: block}
+}
+
+@media only screen and (max-width: 768px){
+	#thoigian .thoigian-box{position: relative; z-index: 1;}
+	#thoigian .thoigian-inner {margin-top: -180px; position: absolute; z-index: 10000;}
+}
+ 
+@media only screen and (max-width: 480px){
+	#thoigian {display: none}
+	#thoigian1 {display: block}
+	.thoigian-box1 h6 {color: #F0E2C0; text-align: center}
+}
+
+
+ .thoigian-inner img:hover {animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
+
+#diadiem .diadiemtext {text-align: justify; color: #F0E2C0; margin-top: 65px}
+#diadiem .diadiem-bottom {margin-bottom: 150px}
+
+@media only screen and (max-width: 768px){
+	#diadiem .diadiemtext {margin-top: 20px; text-align: center}
+	#diadiem .diadiem-bottom {margin-bottom: 100px}
+}
+
+@media only screen and (max-width: 480px){
+	#diadiem .diadiemtext {text-align: center; margin-top: 30px}
+}

@@ -1,0 +1,478 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*BatdauCSSLienHe*/
+#contact h2 {color:  #505D58;}
+#contact h4 {color:  #505D58; text-align: center; font-weight: 700}
+#contact p {color:  #505D58; text-align: center}
+#contact .map {padding-top: 7px}
+#contact .contact-text-box {margin-top: 110px;}
+#contact .thoigian-open {margin-top: 30px}
+
+@media only screen and (max-width: 768px){
+	#contact .contact-text-box {margin-top: 20px;}
+	#contact h4 {color:  #505D58; text-align: justify}
+	#contact p {color:  #505D58; text-align: justify}
+	#contact .map-height {height: 400px}
+}
+
+@media only screen and (max-width: 480px){
+	#contact .contact-text-box {margin-top: 30px}
+	#contact h4 {color:  #505D58; text-align: center}
+	#contact p {color:  #505D58; text-align: center}
+	#contact .map-height {height: 300px}
+}
+
+#thacmac h2 {color: #F0E2C0;}
+#thacmac p {color: #F0E2C0;}
+#thacmac .wrap-lienhe {max-width: 960px; border-radius: 2px; padding: 0px 20px 0px 20px; position: relative;}
+.thacmac-bottom {margin-bottom: 150px}
+
+@media (max-width: 992px) {
+	#thacmac .wrap-lienhe {padding: 66px 80px 59px 80px;}
+	.thacmac-bottom {margin-bottom: 80px}
+	#thacmac .wrap-lienhe {margin-top: -70px} 
+}
+
+@media (max-width: 576px) {
+	#thacmac .wrap-lienhe {padding: 66px 15px 59px 15px;}
+	#thacmac .wrap-lienhe {margin-top: -50px} 
+	.thacmac-bottom {margin-bottom: 50px}
+	
+}
+
+#thacmac .lienhe-form {width: 100%; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; flex-wrap: wrap; justify-content: space-between;}
+#thacmac .wrap-nhap {width: 100%; position: relative; margin-bottom: 5px;}
+#thacmac .label-nhap {font-size: 14px; color: #505D58;}
+#thacmac .nhap {display: block; width: 100%; background: #505D58; border-radius: 2px; font-size: 20px; color: #F0E2C0; line-height: 1.2; 
+padding: 0 28px; margin-top: 10px; border: 1px #F0E2C0 solid;}
+#thacmac .nhap:focus {color:#F0E2C0; background-color: #505D58; border-color: #F0E2C0; outline: 0; box-shadow:0 0 0 0.2rem rgba(240,226,192,0.25);}
+#thacmac ::placeholder {font-size: 16px; color:rgba(240,226,192,0.5) }
+
+
+
+
+/*BatdauCSSDangKyVe*/
+#dangky { background: url(../image/lh-dk-mv-tt/pattern-small.png) no-repeat center ; margin-bottom: 30px}
+#dangky label {color:  #F0E2C0;}
+#dangky .padding-form {padding: 0px 50px 0px 50px}
+#dangky2 {display: none}
+#dangky ::placeholder {font-size: 16px; color:rgba(240,226,192,0.5) }
+#dangky .form-control3 {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #F0E2C0;
+  background-color: #505D58;
+  background-clip: padding-box;
+  border: 1px solid #F0E2C0;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#dangky .form-control3:focus {
+  color: #F0E2C0;
+  border-color: #F0E2C0;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(240,226,192,0.25);
+}
+
+
+@media only screen and (max-width: 768px){
+	#dangky .padding-form {padding: 0px 10px 0px 10px}
+	.dropdown1 {width: 200px; margin-top: 10px; text-align: left}
+}
+
+@media only screen and (max-width: 480px){
+	#dangky {display: none}
+	#dangky2 {display: block}
+	#dangky2 label {color:  #F0E2C0;}
+	#dangky2 .padding-form1 {padding: 0px 65px 0px 65px}
+}
+
+
+
+.dropdown1 {width: 375px;text-align: left}
+
+@media only screen and (max-width: 768px){
+	.dropdown1 {width: 280px; text-align: left}
+}
+
+
+
+
+
+/*BatdauCSSMuaVe*/
+.filterDiv {display: none}
+#banggiave .show {display: block;}
+#banggiave .container1 {margin-top: 20px; overflow: hidden;}
+#banggiave .btn1 {
+  outline: none;
+  padding: 12px 16px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;
+  cursor: pointer;
+  color: #F0E2C0;
+}
+
+#banggiave .btn1:hover {
+  background-color: #F0E2C0;
+  color: #505D58;
+}
+ #banggiave .btn1:focus {
+  background-color: #F0E2C0;
+  color: #505D58; 
+	 box-shadow: 0 0 0 0.2rem rgba(240,226,192,0.25)
+} 
+#banggiave .btn1.active {
+  background-color: #F0E2C0;
+  color: #505D58;
+}
+#banggiave table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #F0E2C0;
+  -webkit-box-shadow: 10px 10px 24px -7px rgba(0,0,0,0.68);
+  -moz-box-shadow: 10px 10px 24px -7px rgba(0,0,0,0.68);
+  box-shadow: 10px 10px 24px -7px rgba(0,0,0,0.68);
+}
+
+#banggiave th, td {
+  text-align: left;
+  padding: 8px;
+  color: #F0E2C0;
+}
+#banggiave tr:nth-child(even){border: 1px solid #F0E2C0; background-color: #F0E2C0}
+
+
+
+
+
+/*BatdauCSSThanhtoan*/
+* {box-sizing: border-box;}
+
+#thanhtoan h3 {color: #F0E2C0; text-align: center; margin-bottom: 30px}
+#thanhtoan h4 {color: #F0E2C0; margin-bottom: 30px}
+#thanhtoan p {color: #F0E2C0}
+#thanhtoan a {color: #F0E2C0}
+#thanhtoan label {color: #F0E2C0; font-size: 18px}
+
+
+#thanhtoan .container-small {
+  background-color: #505D58;
+  padding: 5px 90px 15px 90px;
+  border-radius: 3px;
+}
+
+#thanhtoan input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #F0E2C0;
+  border-radius: 3px;
+  background-color: #505D58;
+}
+
+#thanhtoan label {
+  margin-bottom: 10px;
+  display: block;
+  text-align: center;
+}
+
+#thanhtoan .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+#thanhtoan .btn2 {
+  background-color: #F0E2C0;
+  color: #505D58;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  text-align: center;
+  border: 1px solid #F0E2C0;
+}
+
+#thanhtoan .btn2:hover {
+  background-color: #505D58;
+  color: #F0E2C0;
+  border: 1px solid #F0E2C0;
+}
+
+#thanhtoan .btn2:focus, .btn2.focus {
+  box-shadow: 0 0 0 0.2rem rgba(240,226,192,0.5);
+  border: 1px solid #F0E2C0;
+}
+
+#thanhtoan hr { border: 1px solid #F0E2C0; }
+#thanhtoan span.price {float: right; color:  rgba(240,226,192,0.6);}
+#thanhtoan ::placeholder { color: rgba(240,226,192,0.6);}
+#thanhtoan .thanhtoan-left {padding: 0 80px 0 80px}
+#thanhtoan .thanhtoan-left1 {padding: 0 90px 0 90px; margin-top: 10px}
+
+#thanhtoan .form-control4 {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #F0E2C0;
+  background-color: #505D58;
+  background-clip: padding-box;
+  border: 1px solid #F0E2C0;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#thanhtoan .form-control4:focus {
+  color: #F0E2C0;
+  border-color: #F0E2C0;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(240,226,192,0.25);
+}
+
+.ve-desktop {display: block}
+.ve-ipad {display: none}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+ 
+ 	#thanhtoan .thanhtoan-left {padding: 0 50px 0 50px}
+ 	#thanhtoan .thanhtoan-left1 {padding: 0 60px 0 60px}
+ 	#thanhtoan .col-lg-8 {margin-top: 50px}
+	#thanhtoan .container-small {background-color: #505D58; padding: 5px 40px 15px 40px; border-radius: 3px;}
+	.ve-desktop {display: none}
+	.ve-ipad {display: block}
+}
+@media only screen and (max-width: 480px){
+	 #thanhtoan .thanhtoan-left {padding: 0}
+	 #thanhtoan .thanhtoan-left1 {padding: 0 10px 0 10px}
+	#thanhtoan .container-small {background-color: #505D58; padding: 5px 20px 15px 20px; border-radius: 3px;}
+	.ve-desktop {display: none}
+	.ve-ipad {display: block}
+}
+
+
+
+
+/* The checkbox-box */
+.checkbox-box {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 19%;
+  left: 31%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-box:hover input ~ .checkmark {
+  background-color: #505D58;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-box input:checked ~ .checkmark {
+  background-color: #F0E2C0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-box .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #505D58;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px){
+	.checkmark {
+  position: absolute;
+  top: 15%;
+  left: 19%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;}
+}
+
+@media only screen and (max-width: 480px){
+		.checkmark {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;}	
+}
+
+
+
+
+/* The checkbox-box */
+.checkbox-box1 {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-box1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  top: 17%;
+  left: 30%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-box1:hover input ~ .checkmark1 {
+  background-color: #505D58;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-box1 input:checked ~ .checkmark1 {
+  background-color: #F0E2C0;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-box1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-box1 .checkmark1:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #505D58;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 768px){
+	.checkmark1 {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;}
+}
+
+@media only screen and (max-width: 480px){
+		.checkmark1 {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  height: 15px;
+  width: 15px;
+  background-color: #505D58;
+  border: 1px solid #F0E2C0;}	
+}
+
+
+
+
+/*BatdauCSS-Thongtinmuave*/
+
+#muave .muave-button {position: absolute ;margin-left: 610px; margin-top: -80px}
+#muave .muave-button a {color: #F0E2C0; background-color: #505D58; padding: 2px 7px; text-decoration: none}
+muave > .muave-button > a:hover {color: #505D58; background-color: #F0E2C0; border: 1px solid #505D58 ;padding: 2px 7px; text-decoration: none}
+
+.muave-desktop {display: block}
+.muave-ipad {display: none}
+@media only screen and (max-width: 768px){
+	#muave .muave-button {position: absolute ;margin-left:365px; margin-top: -50px}
+	#muave .muave-button p {font-size: 12px;}
+	#muave .muave-button a {font-size: 12px;}
+.muave-desktop {display: none}
+.muave-ipad {display: block}
+}
+
+@media only screen and (max-width: 480px){
+	#muave .muave-button {position: absolute ;margin-left:280px; margin-top: -40px}
+	#muave .muave-button p {font-size: 9px}
+	#muave .muave-button a {font-size: 9px;}
+}
+#muave hr.new1 {border-top: 1px solid rgba(240,226,192,0.5); margin: 40px 0px 20px 0px;}
+
+
+
+

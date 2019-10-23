@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+#calendar-box h4 {color: #F0E2C0;}
+#calendar-box h5 {color: #F0E2C0;}
+#calendar-box h6 {color: #F0E2C0; font-weight: bold; font-size: 20px}
+#calendar-box p {color: #F0E2C0; font-size: 14px}
+#calendar-box .lichtrinh-desktop {display: block}
+#calendar-box .lichtrinh-ipad {display: none}
+.calendar-bottom {margin-bottom: 150px}
+
+.calendar-a > a {color: #505D58;}
+.calendar-a > a:hover {color: #F0E2C0; text-decoration: none; background: #505D58; padding: 7px 15px}
+
+.calendar-right-text a {color: #F0E2C0; border: 1px solid #F0E2C0; padding: 3px 7px; border-radius: 3px; text-decoration: none}
+.calendar-right-text a:hover {color: #505D58; background: #F0E2C0; padding: 3px 7px }
+
+#calendar-box hr.new1 {border-top: 1px solid rgba(240,226,192,0.5); margin: 40px 0px 20px 0px}
+
+.calendarbox1 {
+  width:315px; 
+  background:#332f2e; 
+  border-radius:5px; 
+  overflow:hidden; 
+  display:block; 
+  margin-bottom:10px; 
+  box-shadow:0 0 10px #201d1c; 
+  margin:0 auto; 
+  float: left
+}
+
+.calendar-inside {
+  padding:0 10px 10px 10px; 
+  box-sizing:border-box!important; 
+  background:#F0E2C0; 
+
+}
+
+.tieude-calendar {
+  font-size: 20px; 
+  font-weight:700; 
+  color:#505D58; 
+  display:block; 
+  margin:18px 0 0 0; 
+  text-transform:uppercase; 
+  text-align:center; 
+  letter-spacing:1px;
+}
+
+.calendar-inside span {
+  font-size:13px; 
+  font-weight:400; 
+  color:#505D58; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.calendar-inside .blank:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle { 
+  border: 1px solid #505D58;
+  color: #505D58; 
+  border-radius: 3px
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font-size:13px; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px 10px; 
+  background: rgba(80,93,88,1.0); 
+  color:#F0E2C0; 
+  padding:1px 4px; 
+  z-index:9999; 
+  min-width:110px; 
+
+}
+
+@media only screen and (max-width: 768px) {
+	#calendar-box .lichtrinh-desktop {display: none}
+	#calendar-box .lichtrinh-ipad {display: block}
+	.calendar-bottom {margin-bottom: 100px}
+}
+
+@media only screen and (max-width: 480px) {
+	#calendar-box .lichtrinh-desktop {display: block; margin-top: 10px}
+	#calendar-box .lichtrinh-ipad {display: none}
+	.text-lichtrinh {text-align: center}
+}
+
+/*BatdauCSS-ThongTinMuaVe*/
+#mixedSlider {
+  position: relative;
+}
+#mixedSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 5%;
+}
+#mixedSlider .MS-content .item {
+  display: inline-block;
+  width: 33.3333%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  padding: 0 10px;
+}
+@media (max-width: 991px) {
+  #mixedSlider .MS-content .item {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-content .item {
+    width: 100%;
+  }
+}
+#mixedSlider .MS-content .item .imgTitle {
+  position: relative;
+}
+
+
+#mixedSlider .MS-content .item .imgTitle img {
+  height: auto;
+  width: 100%;
+}
+
+#mixedSlider .MS-content .item h2 {
+  font-size: 20px;
+  margin: 15px 5px;
+  text-align: center;
+  color:#F0E2C0;
+}
+
+
+#mixedSlider .MS-content .item p {
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+  color:#F0E2C0;
+}
+
+
+#mixedSlider .MS-controls button {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  outline: 0;
+  font-size: 30px;
+  top: 70px;
+  color: rgba(240,226,192,0.6);
+  transition: 0.15s linear;
+}
+#mixedSlider .MS-controls button:hover {
+  color: rgba(240,226,192,0.9);
+}
+@media (max-width: 992px) {
+  #mixedSlider .MS-controls button {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls button {
+    font-size: 20px;
+  }
+}
+#mixedSlider .MS-controls .MS-left {
+  left: 0px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-left {
+    left: -10px;
+  }
+}
+#mixedSlider .MS-controls .MS-right {
+  right: 0px;
+}
+@media (max-width: 767px) {
+  #mixedSlider .MS-controls .MS-right {
+    right: -10px;
+  }
+}
+#basicSlider { position: relative; }
+
+#basicSlider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 2%;
+  height: 50px;
+}
+
+#basicSlider .MS-content .item {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  line-height: 50px;
+  vertical-align: middle;
+}
+@media (max-width: 991px) {
+
+#basicSlider .MS-content .item { width: 25%; }
+}
+@media (max-width: 767px) {
+
+#basicSlider .MS-content .item { width: 35%; }
+}
+@media (max-width: 500px) {
+
+#basicSlider .MS-content .item { width: 50%; }
+}
+
+
+#basicSlider .MS-controls button { position: absolute; }
+
+#basicSlider .MS-controls .MS-left {
+  top: 35px;
+  left: 10px;
+}
+
+#basicSlider .MS-controls .MS-right {
+  top: 35px;
+  right: 10px;
+}

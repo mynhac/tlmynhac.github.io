@@ -1,0 +1,559 @@
+
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/Template1.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Trien lam My Nhac</title>
+<!-- InstanceEndEditable -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/mainstyleLINH.css" type="text/css" />
+	<link rel="stylesheet" href="css/gioithieustyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/trienlamstyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/lienhestyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/tintucstyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/thuvienstyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/chitietstyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/bannerstyle.css" type="text/css"/>
+	<link rel="stylesheet" href="css/calendar-style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Maitree&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"> </script>
+	<script src="js/customLINH.js"></script>
+	<script src="js/wow.min.js"> </script>
+	<script src="js/jquery.carouFredSel-6.0.4-packed.js"> </script>
+
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" onload="startTime()">
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>	
+<header>
+	
+  <center><a class="logomenu"><img src="image/logo.png" class="img-fluid" alt="Responsive image" /></a></center>
+	<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"  style="border-bottom: 1px solid rgba(240,226,192,0.7)"> 
+	<div class="container">
+	 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> </span> </button>
+		
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+	    	<ul class="navbar-nav mr-auto">
+	      		<li class="nav-item active"> <a class="nav-link text-primary" href="index.html.html"> Trang chủ </a> </li>
+	      		<li class="nav-item"> <a class="nav-link text-primary" href="gioithieu.html"> Giới thiệu </a> </li>
+			
+	      		<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Triển lãm </a>
+	      			<div class="dropdown-menu megamenu shadow-sm p-3 mb-5 rounded" aria-labelledby="navbarDropdown1"> 
+						<div class="row">
+         					<div class="col-sm-4 col-lg-3">
+								<div class="row">
+									<div class="col-md-9 mega-left">
+          								<h6><a class="dropdown-item" href="#">Đã diễn ra</a></h6>
+          								<h6><a class="dropdown-item" href="trienlam.html">Đang diễn ra</a></h6>
+										<h6><a class="dropdown-item" href="#">Sẽ diễn ra</a></h6>
+									</div>
+									<div class="col-md-3">
+										<div class="vl"></div>
+										<hr class="hr1">
+									</div>
+								</div>
+         					</div>
+         					<div class="col-sm-8 col-lg-9">
+          						<h5>Đang diễn ra</h5>
+									<div class="row">
+										<div class="col-md-4 col-sm-12">
+          									<img src="image/index/thuvienanh.png" class="img-fluid" alt="Responsive image">
+										</div>
+										<div class="col-md-8 col-sm-12">
+          									<a href="trienlam.html" style="color: #F0E2C0">"Nhạc cụ truyền thống Việt Nam: <br/>Ngược dòng quá khứ"</a>
+											<p style="color: #F0E2C0; margin-top: 20px"> 5/11/2019- 10/11/2019 </p>
+										</div>
+									</div>
+        	 				</div>
+   
+        				</div>
+					</div>
+          		</li>
+			
+	      		<li class="nav-item"> <a class="nav-link text-primary" href="tintuc.html"> Tin tức </a> </li>
+				
+		  		<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Thư viện </a> 
+				  <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+						<a class="dropdown-item" href="thuvienanh.html">Thư viện ảnh</a> 
+							<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="thuvienamthanh.html"> Thư viện âm thanh </a>
+					</div>
+			  	</li>
+				
+				<li class="nav-item"> <a class="nav-link text-primary" href="lichtrinh.html">Lịch triển lãm </a> </li>
+		  		<li class="nav-item"> <a class="nav-link text-primary" href="lienhe.html"> Liên hệ </a> </li>
+        	</ul>
+		  
+	    	<form class="form-inline my-2 my-lg-0">
+	      		<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+	      		<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" style="padding: 4px 0px" aria-hidden="true"></i></button>
+        	</form>
+    	</div>
+	</div> <!--ketthucContainerHeader-->
+</nav>
+</header>
+	
+<!-- InstanceBeginEditable name="EditMain" -->
+<main>
+<section id="vetrienlam">
+<div class="container " >
+	<div class="row" style="margin-top: 20px">
+		<div class="col-md-12">
+			<center>
+				<img src="image/index/pattern4.png" style="margin: 70px 0" class="wow fadeInUp img-fluid pattern-desktop" data-wow-duration="2s" alt="Responsive image">  
+				<img src="image/index/pattern-small.png" style="margin: 40px 0" class="wow fadeInUp img-fluid pattern-phone" data-wow-duration="2s" alt="Responsive image">
+			</center>
+    	</div>
+		
+		<div class="col-md-12">
+			<center>
+				<img src="image/trienlam/headline1.png" style="margin-bottom: 40px" class="wow fadeInUp img-fluid headline-desktop" data-wow-duration="2s" alt="Responsive image">  
+				<img src="image/trienlam/headline1.1.png" class="img-fluid wow fadeInUp headline-phone" data-wow-duration="1.5s" alt="Responsive image" style="margin-bottom: 40px"> 
+			</center>
+    	</div>
+	
+		<div class="col-md-12">
+			<center>
+				<h4 class="wow fadeInUp" data-wow-duration="2s"> Tuần lễ triển lãm: “Nhạc cụ truyền thống Việt Nam: Ngược dòng quá khứ” </h4> 
+			</center>
+    	</div>
+		
+		<div class="col-md-12 box-vetrienlam wow fadeInUp" data-wow-duration="2s">
+			<center>
+				<img src="image/trienlam/vetrienlam.png" class="img-fluid trienlam-desktop" alt="Responsive image"> 
+				<img src="image/trienlam/vetrienlam2.png" class="img-fluid trienlam-ipad" alt="Responsive image">
+				<img src="image/trienlam/vetrienlam3.png" class="img-fluid trienlam-phone" alt="Responsive image">
+			</center>
+			<div class="col-md-12 textbox-vetrienlam">
+				<p class="text-vetrienlam">Cất giấu trong nhạc cụ Việt Nam là muôn vàn những nếp gấp chưa từng được lật mở. Kho tàng nhạc cụ Việt Nam tựa một tác phẩm siêu thực, chỉ cần xoay góc độ nhìn, ta lại tìm thấy ở đó những thanh âm, sắc màu, những câu chuyện, ẩn dụ, kho báu hoàn toàn mới. Hãy cùng chúng tôi tham dự vào tuần lễ triển lãm đầu tiên “Nhạc cụ truyền thống Việt Nam: Ngược dòng quá khứ” để có thể khám phá những khía cạnh hoàn toàn mới về chúng qua những hoạt động bổ ích được dẫn dắt bởi những người hướng dẫn là nghệ sỹ, chuyên gia từ  lĩnh vực âm nhạc. </p>
+			</div>
+		</div>
+<!--		<div class="col-md-12 wow fadeInUp" data-wow-duration="2s">
+			<p class="text-vetrienlam">Cất giấu trong nhạc cụ Việt Nam là muôn vàn những nếp gấp chưa từng được lật mở. Kho tàng nhạc cụ Việt Nam tựa một tác phẩm siêu thực, chỉ cần xoay góc độ nhìn, ta lại tìm thấy ở đó những thanh âm, sắc màu, những câu chuyện, ẩn dụ, kho báu hoàn toàn mới. Hãy cùng chúng tôi tham dự vào tuần lễ triển lãm đầu tiên “Nhạc cụ truyền thống Việt Nam: Ngược dòng quá khứ” để có thể khám phá những khía cạnh hoàn toàn mới về chúng qua những hoạt động bổ ích được dẫn dắt bởi những người hướng dẫn là nghệ sỹ, chuyên gia từ  lĩnh vực âm nhạc. </p>
+    	</div>-->
+	</div>
+</div> <!--ketthucContainerVetrienlam-->
+</section> <!--ketthucSectionVetrienlam-->
+	
+	
+<section id="cogi">
+<div class="container">
+	<div class="row" style="margin-top: 20px">
+		<div class="col-md-12" >
+			<center>
+				<img src="image/index/pattern4.png" style="margin-top: 70px; margin-bottom: 50px" class="wow fadeInUp img-fluid pattern-desktop" data-wow-duration="1.5s" alt="Responsive image"> 
+				<img src="image/index/pattern-small.png" style="margin: 30px 0" class="wow fadeInUp img-fluid pattern-phone" data-wow-duration="1.5s" alt="Responsive image">
+			</center>
+		</div>
+		<div class="col-md-12">
+			<center>
+				<img src="image/trienlam/headline2.png" style="margin-bottom: 40px" class="wow fadeInUp img-fluid headline-desktop" data-wow-duration="1.5s" alt="Responsive image">  
+				<img src="image/trienlam/headline2.1.png" class="img-fluid wow fadeInUp headline-phone" data-wow-duration="1.5s" alt="Responsive image" style="margin-bottom: 40px">
+			</center>
+		</div>
+		
+	</div>
+	<div class="row" >
+		<div class="col-md-12 small-cogi">
+			<div class="flip-box wow fadeInUp" data-wow-duration="2s">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="image/trienlam/Group 8.png" style="border-radius: 20px" class="img-fluid desktop" alt="Responsive image">
+						<img src="image/trienlam/Group̣8.ipad.png" style="border-radius: 20px" class="img-fluid ipad" alt="Responsive image">
+						<img src="image/trienlam/Group8.phone.png" style="border-radius: 20px" class="img-fluid phone" alt="Responsive image">
+					</div>
+					<div class="flip-box-back">	
+						<div class="back-inner d-block mx-auto">
+							<h2 style="text-align:center"> Trưng bày </h2>
+							<p>Khám phá những nhạc cụ lâu đời của Việt Nam vẫn còn được sử dụng sau hàng ngàn, hàng trăm năm. Những âm thanh lưu giữ ký ức đẹp của bao thế hệ người Việt Nam</p>
+							<h5>Bộ dây - Bộ gõ - Bộ hơi</h5>
+							<p style="margin-top: 20px"><a href="chitiet-trungbay.html"> Xem thêm </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-12 small-cogi">
+			<div class="flip-box wow fadeInUp" data-wow-duration="2s">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="image/trienlam/Group 9.png" style="border-radius: 20px" class="img-fluid desktop" alt="Responsive image">
+						<img src="image/trienlam/Group9.ipad.png" style="border-radius: 20px" class="img-fluid ipad" alt="Responsive image">
+						<img src="image/trienlam/Group9.phone.png" style="border-radius: 20px" class="img-fluid phone" alt="Responsive image">
+					</div>
+					<div class="flip-box-back">	
+						<div class="back-inner1 d-block mx-auto">
+							<h2 style="text-align:center"> Tọa đàm </h2>
+							<p> Tìm về những dấu ấn văn hóa xuyên suốt chiều dài lịch sử giúp tạo nên những nhạc cụ truyền thống thân thương giúp thay đổi nền âm nhạc đa dạng của Việt Nam.</p>
+							<h5>Chất Sử trong nhạc cụ - Hương sáo hòa kí ức - Rồng rắn lên dây</h5>
+							<p style="margin-top: 20px"><a href="chitiet-toadam.html"> Xem thêm </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-12 small-cogi">
+			<div class="flip-box wow fadeInUp" data-wow-duration="2s">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="image/trienlam/Group 10.png" style="border-radius: 20px" class="img-fluid desktop" alt="Responsive image">
+						<img src="image/trienlam/Group10.ipad.png" style="border-radius: 20px" class="img-fluid ipad" alt="Responsive image">
+						<img src="image/trienlam/Group10.phone.png" style="border-radius: 20px" class="img-fluid phone" alt="Responsive image">
+					</div>
+					<div class="flip-box-back">	
+						<div class="back-inner2 d-block mx-auto">
+							<h2 style="text-align:center"> Workshop </h2>
+							<p> Làm sao để có thể thưởng thức những nhạc cụ Việt Nam một cách đúng điệu? Câu hỏi ấy sẽ phần nào được giải đáp trong những buổi workshop giúp bạn tìm ra phương pháp để tăng sự nhạy cảm với mỹ học.</p>
+							<h5>Đàn tranh trên sơn mài - Ngũ tuyệt phối âm - Nhịp phách cơ bản</h5>
+							<p style="margin-top: 20px"><a href="chitiet-workshop.html"> Xem thêm </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-12 small-cogi">
+			<div class="flip-box wow fadeInUp" data-wow-duration="2s">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="image/trienlam/Group 11.png" style="border-radius: 20px" class="img-fluid desktop" alt="Responsive image">
+						<img src="image/trienlam/Group11.ipad.png" style="border-radius: 20px" class="img-fluid ipad" alt="Responsive image">
+						<img src="image/trienlam/Group11.phone.png" style="border-radius: 20px" class="img-fluid phone" alt="Responsive image">
+					</div>
+					<div class="flip-box-back">	
+						<div class="back-inner3 d-block mx-auto">
+							<h2 style="text-align:center"> Chiếu phim </h2>
+							<p> Nhạc cụ Việt Nam sẽ ngập tràn khắp không gian của bạn. Hãy ngắm chúng với bao hoài niệm tươi đẹp được phục dựng trong những thước phim đong đầy yêu mến. Hãy hít ngửi mùi hương ký ức được cô đặc trong loại tình dầu đặc biệt.</p>
+							<h5>Dấu ấn nhạc cụ trong văn hóa - Bức tường lãng quên - Nhạc cụ vượt thời gian</h5>
+							<p style="margin-top: 20px"><a href="chitiet-chieuphim.html"> Xem thêm </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-12 small-cogi">
+			<div class="flip-box wow fadeInUp" data-wow-duration="2s">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="image/trienlam/Group 12.png" style="border-radius: 20px" class="img-fluid desktop" alt="Responsive image">
+						<img src="image/trienlam/Group12.ipad.png" style="border-radius: 20px" class="img-fluid ipad" alt="Responsive image">
+						<img src="image/trienlam/Group12.phone.png" style="border-radius: 20px" class="img-fluid phone" alt="Responsive image">
+					</div>
+					<div class="flip-box-back">	
+						<div class="back-inner4 d-block mx-auto">
+							<h2 style="text-align:center"> Tương tác </h2>
+							<p>Trải nghiệm thực tế với nhạc cụ cùng với những màn trình diễn chuyên nghiệp giúp bạn tổng hợp và sáng tỏ về các khía cạnh khác nhau làm nên tinh hoa đặc sắc của nhạc cụ Việt Nam.</p>
+							<h5>Xưởng gỗ ngô đồng - Tranh cát đàn nguyệt -  Một lát cắt văn hóa</h5>
+							<p style="margin-top: 20px"><a href="chitiet-trinhdien.html"> Xem thêm </a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div> <!--ketthucrow-->
+</div> <!--ketthucContainerCogi-->
+</section> <!--ketthucSectionCogi-->
+	
+	
+<section id="thoigian">
+<div class="container">
+	<div class="row" style="margin-top: 20px">
+		<div class="col-md-12">
+			<center>
+				<img src="image/index/pattern4.png" style="margin: 60px 0" class="wow fadeInUp img-fluid" data-wow-duration="1.5s" alt="Responsive image">  
+			</center>
+    	</div>
+		<div class="col-md-12" >
+			<center>
+				<img src="image/trienlam/headline3.png" style="margin-bottom: 50px" class="wow fadeInUp img-fluid headline-desktop" data-wow-duration="1.5s" alt="Responsive image">  
+			</center>
+    	</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12 col-xs-12 thoigian-box wow fadeInUp"  data-wow-duration="2s">
+			<img src="image/trienlam/Group 13.png" class="img-fluid thoigian-img" alt="Responsive image" style="border-radius: 20px">
+			<div class="row">
+				<div class="thoigian-inner col-md-12">
+					<h5>Tuần lễ triển lãm Mỹ Nhạc: Nhạc cụ truyền thống Việt Nam sẽ diễn ra từ ngày 5/11/19-10/11/19.</h5>
+						<div class="row" style="margin-top: 30px">
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 2.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 3.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 4.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 5.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 6.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+							<div class="col-md-2">
+								<center>
+								<img src="image/trienlam/Group 7.png" class="img-fluid" alt="Responsive image">
+								</center>
+							</div>
+						</div>
+				</div>
+			</div>
+    	</div>
+	</div>
+</div> <!--ketthucContainerThoigian-->
+</section> <!--ketthucSectionThoigian-->
+	
+	
+<section id="thoigian1">
+<div class="container">
+	<div class="row" >
+		<div class="col-md-12" >
+			<center>
+				<img src="image/index/pattern-small.png" style="margin-top: 20px" class="wow fadeInUp img-fluid pattern-phone" data-wow-duration="2s" alt="Responsive image">  
+			</center>
+    	</div>
+		<div class="col-md-12">
+			<center>
+				<img src="image/trienlam/headline3.1.png" class="img-fluid wow fadeInUp headline-phone" data-wow-duration="1.5s" alt="Responsive image" style="margin: 40px 0"> 
+			</center>
+    	</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-12 wow fadeInUp" data-wow-duration="2s">
+			<h6 style="text-align: center; color: #F0E2C0">Tuần lễ triển lãm Mỹ Nhạc sẽ diễn ra từ ngày 5/11/19-10/11/19. Mở cửa từ 9h sáng đến 21h30 mỗi ngày. </h6>
+		</div>
+	</div>
+	
+	<div class="row" style="padding: 10px 10px">
+		<div class="col-xs-4">
+			<img src="image/trienlam/Group 2.png" class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="image/trienlam/Group 3.png" class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="image/trienlam/Group 4.png" class="img-fluid" alt="Responsive image">
+		</div>
+	</div>
+	<div class="row" style="padding: 10px 10px">
+		<div class="col-xs-4">			
+			<img src="image/trienlam/Group 5.png" class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="image/trienlam/Group 6.png" class="img-fluid" alt="Responsive image">
+		</div>
+		<div class="col-xs-4">
+			<img src="image/trienlam/Group 7.png" class="img-fluid" alt="Responsive image">
+		</div>
+	</div>
+</div><!--ketthuccontainerContainerThoigian1-->
+</section>	<!--ketthuccontainerSectionThoigian1-->
+	
+	
+<section id="diadiem">
+<div class="container diadiem-bottom">
+	<div class="row">
+		<div class="col-md-12" style="margin-top: 30px">
+			<center>
+				<img src="image/index/pattern4.png" style="margin: 70px 0" class="wow fadeInUp img-fluid pattern-desktop" data-wow-duration="1.5s" alt="Responsive image">  
+				<img src="image/index/pattern-small.png" style="margin-top: 20px; margin-bottom: 40px" class="wow fadeInUp img-fluid pattern-phone" data-wow-duration="1.5s" alt="Responsive image"> 
+			</center>
+    	</div>
+		<div class="col-md-12" >
+			<center>
+				<img src="image/trienlam/headline4.png" style="margin-bottom: 50px" class="wow fadeInUp img-fluid headline-desktop" data-wow-duration="1.5s" alt="Responsive image">  
+				<img src="image/trienlam/headline4.1.png" class="img-fluid wow fadeInUp headline-phone" data-wow-duration="1.5s" alt="Responsive image" style="margin-bottom: 40px"> 
+			</center>
+    	</div>
+	</div>
+	<div class="row wow fadeInUp" data-wow-duration="2s">
+		<div class="col-lg-6 col-md-12 ">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2330.542755822935!2d106.68846060787546!3d10.773725389709167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ca6e92b4f%3A0x60cbc763b0aa328!2zNzEgTmd1eeG7hW4gVGjhu4sgTWluaCBLaGFpLCBQaMaw4budbmcgUGjhuqFtIE5nxakgTMOjbywgUXXhuq1uIDEsIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1570172428159!5m2!1sen!2s" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+		<div class="col-lg-6 col-md-12">
+			<div class="col-lg-10 offset-lg-1 col-md-12">
+				<p class="diadiemtext">Tọa lạc tại 71 Nguyễn Thị Minh Khai, quận 1, Mỹ Nhạc là một không gian đa năng, với diện tích rộng gần 200m2, Mỹ Nhạc sẽ diễn ra những hoạt động như Trưng bày, Tọa đàm, Workshop, Chiếu phim, Tương tác. Với đầy đủ các trang thiết bị và tiện ích như điều hòa không khí, mạng wifi Internet tốc độ cao, máy chiếu chuẩn Full-HD,  khu vực sân khấu lên đến 100 chỗ ngồi… Mỹ Nhạc hứa hẹn sẽ mang đến cho bạn một tuần lễ triển lãm cực kì hấp dẫn và bổ ích.</p>
+    		</div> 
+		</div>
+	</div>
+	
+</div> <!--ketthucContainerDiadiem-->
+</section> <!--ketthucSectionDiadiem-->
+ 
+</main>
+<!-- InstanceEndEditable -->
+	
+<footer class=" wow fadeInUp" data-wow-duration="2s">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-4 col-md-offset-1 col-sm-6  col-sm-offset-1 footerleft ">
+            	<h4>Liên hệ</h4>
+            	<p> Địa chỉ: Mỹ Nhạc Exhibition Center,<br/> 
+					71 Nguyễn Thị Minh Khai, Q.1, TP.HCM</p>
+                <p> Điện thoại: (028) 3 123 456</p>
+                <p> Email: mynhac@gmail.com</p>
+            </div>
+                
+            <div class="col-md-4 col-sm-6 footer-padding">
+              	<h4> Thời gian mở cửa</h4>
+              	<p> Thứ 2 - Thứ 6: 9:30 - 21:30 </p>
+                <p> Thứ 7: 8:00 - 22:00</p>
+                <p> Chủ nhật: 8:00 -22:00</p>
+            </div>
+              
+            <div class="col-md-4 col-sm-6 footer-padding">
+                <h4>Đăng kí</h4>
+                	<div class="form-inline">
+                		<input class="form-control1 mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+						<button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search" style="padding: 4px 0px"></i></button>
+                	</div>
+            </div> 
+		</div>
+		
+		<div class="row">
+			<img src="image/logofooter.png" class="img-fluid rounded mx-auto d-block" alt="Responsive image" style="margin-top: 10px; margin-bottom: 20px"/>  
+		</div>
+		
+		<div class="row">
+			<div class="footer-divider">
+			</div>
+		</div>
+		
+		<div class="row footer-site">
+			<div class="col-md-6 footer-site-left">
+				<p style="margin-left: -20px"><a href="gioithieu.html">Giới thiệu</a> </p>
+                <p><a href="trienlam.html">Triển lãm</a> </p>
+                <p><a href="thuvienanh.html">Thư viện</a></p>
+			</div>
+		
+	
+            <div class="col-md-6 footer-site-right">
+				<p><a href="#" style="font-size: 30px"> <i class="fab fa-twitter-square"></i> </a></p>
+				<p><a href="#" style="font-size: 30px"> <i class="fab fa-instagram"></i> </a></p>
+				<p><a href="#" style="font-size: 30px"> <i class="fab fa-facebook-square"></i> </a></p>
+            </div>
+	
+         </div>
+		
+		<div class="row">
+			<div class="footer-divider">
+			</div>
+		</div>
+		
+		<div class="row" style="height: 60px">
+			<p style="font-size: 14px; color: #505D58; margin-top: 20px; margin-left: 15px"> © 2019 - Bản quyền thuộc về Mỹ Nhạc</p>
+		</div>
+		
+	</div> <!--ketthucContainerFooter-->
+</footer> 
+
+	
+<script>  /*chayscripthieuungWOW*/
+wow = new WOW({
+  boxClass: 'wow', // default
+  animateClass: 'animated', // default
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+});
+wow.init();
+</script>
+		
+	
+<script> /*chayscriptBangGiaVe*/
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn1");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[1].className = current[1].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>	
+	
+
+<script src="js/banner.js"> </script> <!--chayscript Index Banner-->
+<script src="js/slick.min.js"></script> <!--chayscript Vertical Slider-->
+<script  src="js/script.js"></script> <!--chayscript Vertical Slider-->	
+<script  src="js/multislider.js"></script> <!--chay script Slider-->	
+	
+<script> //<!--chay script Slider-->	
+		$('#mixedSlider').multislider({
+			duration: 600,
+			interval: 2000
+		});
+</script>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="js/modernizr.custom.79639.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>
